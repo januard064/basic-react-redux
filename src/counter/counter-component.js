@@ -1,10 +1,11 @@
-const CounterComponent = ({ count, handleIncrement, handleDecrement }) => {
-   console.log(count)
-   
+const CounterComponent = ({ count, store, handleIncrement, handleDecrement }) => {
+    console.log(count)
+
     return (
         <div>
             <div>Counter - state</div>
             <div>contt {count}</div>
+            <div>{store.length}</div>
 
             <div style={{ display: 'flex' }}>
                 <button onClick={handleIncrement}>increment</button>
